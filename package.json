@@ -1,0 +1,25 @@
+{
+  "name": "tv-remote",
+  "version": "1.0.0",
+  "description": "Node.js API for sony bravia TV",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarmuhr/tv-remote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarmuhr/tv-remote/issues"
+  },
+  "homepage": "https://github.com/oscarmuhr/tv-remote#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
