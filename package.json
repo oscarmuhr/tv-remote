@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/oscarmuhr/tv-remote#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
