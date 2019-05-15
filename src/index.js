@@ -61,6 +61,7 @@ request.post('http://' + secretJson.ip + '/sony/guide', {
 
             if (element.service !== 'ircc') {
                 apiServices.forEach(apiService => {
+
                     if (element.service === 'system' && apiService.name === 'getRemoteControllerInfo') {
                         const internalRequestBody = {
                             method: apiService.name,
@@ -105,28 +106,30 @@ request.post('http://' + secretJson.ip + '/sony/guide', {
                             }
                         });
                     } else {
-                        const url = element.service + '/' + apiService.name;
+                        if (!apiService.name.startsWith('set')) {
+                            const url = element.service + '/' + apiService.name;
 
-                        const formattedUrl = transformUrl(url);
-                        urls.push(formattedUrl);
-                        app.get('/' + formattedUrl, (req, res) => {
-                            const internalRequestBody = {
-                                method: apiService.name,
-                                id: 1,
-                                params: [],
-                                version: apiService.versions[0].version
-                            }
-                            request.post('http://' + secretJson.ip + '/sony/' + element.service, {
-                                headers: {
-                                    'content-type': 'application/json',
-                                    'X-Auth-PSK': secretJson.key
-                                },
-                                json: internalRequestBody
-                            }, (error, response, body) => {
-                                if (!!error) throw error;
-                                res.status(response.statusCode).send(body);
+                            const formattedUrl = transformUrl(url);
+                            urls.push(formattedUrl);
+                            app.get('/' + formattedUrl, (req, res) => {
+                                const internalRequestBody = {
+                                    method: apiService.name,
+                                    id: 1,
+                                    params: [],
+                                    version: apiService.versions[0].version
+                                }
+                                request.post('http://' + secretJson.ip + '/sony/' + element.service, {
+                                    headers: {
+                                        'content-type': 'application/json',
+                                        'X-Auth-PSK': secretJson.key
+                                    },
+                                    json: internalRequestBody
+                                }, (error, response, body) => {
+                                    if (!!error) throw error;
+                                    res.status(response.statusCode).send(body);
+                                });
                             });
-                        });
+                        }
                     }
                 });
             }
