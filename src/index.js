@@ -15,6 +15,10 @@ app.get('/admin/endpoints', (req, res) => {
     res.send(urls);
 })
 
+app.get('/', (req, res) => {
+    res.redirect(301, '/home.html');
+})
+
 app.listen(port, () => {
     console.log("Application started on port: " + port);
 });
