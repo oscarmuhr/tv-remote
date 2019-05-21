@@ -22,10 +22,13 @@
                 <span class="fa fa-power-off fa-lg"></span>
             </div>
             <div class="rocker">
-                <div class="rocker-btn rocker-down" onclick="httpGet('/basic-actions/volume-down')">
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/mute')">
+                    <span class="fa fa-volume-mute fa-lg"></span>
+                </div>
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/volume-down')">
                     <span class="fa fa-volume-down fa-lg"></span>
                 </div>
-                <div class="rocker-btn rocker-up" onclick="httpGet('/basic-actions/volume-up')">
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/volume-up')">
                     <span class="fa fa-volume-up fa-lg"></span>
                 </div>
             </div>
@@ -50,9 +53,35 @@
                 <div class="d-pad-button-small bottom-left" onclick="httpGet('/basic-actions/return')">
                     <span class="fa fa-undo fa-lg"></span>
                 </div>
+                <div class="d-pad-button-small top-right" onclick="httpGet('/basic-actions/home')">
+                    <span class="fa fa-home fa-lg"></span>
+                </div>
+                <!--
+                    <div class="d-pad-button-small top-left" onclick="httpGet('/basic-actions/return')">
+                        <span class="fa fa-undo fa-lg"></span>
+                    </div>
+                -->
             </div>
         </div>
-
+        <div class="top-row">
+            <div class="rocker">
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/prev')">
+                    <span class="fa fa-fast-backward fa-lg"></span>
+                </div>
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/rewind')">
+                    <span class="fa fa-backward fa-lg"></span>
+                </div>
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/play')">
+                    <span class="fa fa-eject fa-lg fa-rotate-90"></span>
+                </div>
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/forward')">
+                    <span class="fa fa-forward fa-lg"></span>
+                </div>
+                <div class="rocker-btn" onclick="httpGet('/basic-actions/next')">
+                    <span class="fa fa-fast-forward fa-lg"></span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
