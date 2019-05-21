@@ -132,12 +132,20 @@ body {
     border-bottom-left-radius: 25%;
 }
 
-.top-row {
+.top-row,
+.media-control-row {
     width: 100%;
     padding: 15px;
     display: flex;
     align-items: center;
+}
+
+.top-row {
     justify-content: space-between;
+}
+
+.media-control-row {
+    justify-content: center;
 }
 
 .power-button {
