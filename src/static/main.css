@@ -173,7 +173,7 @@ body {
     top: 0;
     left: 10%;
     z-index: 2;
-    -webkit-clip-path: polygon(100% 0%, 105% 0%, 0% 100%, 95% 100%);
+    -webkit-clip-path: polygon(90% 0%, 100% 0%, 90% 100%, 80% 100%);
     clip-path: polygon(90% 0%, 100% 0%, 90% 100%, 80% 100%);
 }
 
