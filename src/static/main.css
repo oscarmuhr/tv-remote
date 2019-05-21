@@ -13,8 +13,8 @@ body {
 }
 
 .d-pad-wrapper {
-    height: calc(75vw - 20px);
-    width: calc(75vw - 20px);
+    height: calc(90vw - 20px);
+    width: calc(90vw - 20px);
     max-width: calc(576px - 20px);
     max-height: calc(576px - 20px);
     margin: auto;
