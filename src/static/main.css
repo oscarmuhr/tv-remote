@@ -51,8 +51,6 @@ body {
 .d-pad .d-pad-button.left {
     top: 30%;
     left: 5%;
-    -webkit-clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%);
     border-top-left-radius: 25%;
     border-bottom-left-radius: 25%;
     border-top-right-radius: 50%;
@@ -62,8 +60,6 @@ body {
 .d-pad .d-pad-button.top {
     top: 5%;
     left: 30%;
-    -webkit-clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 50%);
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
     border-bottom-left-radius: 50%;
@@ -73,8 +69,6 @@ body {
 .d-pad .d-pad-button.bottom {
     bottom: 5%;
     left: 30%;
-    -webkit-clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%);
-    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 100% 100%, 0% 100%);
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     border-top-left-radius: 50%;
