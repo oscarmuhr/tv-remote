@@ -17,55 +17,17 @@
 
 <body>
     <div class="remote-container">
-        <div class="row">
-            <div class="col-12">
-                <button class="btn btn-block btn-danger" onclick="httpGet('/basic-actions/tv-power')"><span
-                        class="fa fa-power-off"></span></button>
+        <div class="top-row">
+            <div class="power-button" onclick="httpGet('/basic-actions/tv-power')">
+                <span class="fa fa-power-off fa-lg"></span>
             </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-6">
-                <div class="btn-group-vertical btn-block">
-                    <button class="btn btn-block btn-primary" onclick="httpGet('/basic-actions/volume-up')"><span
-                            class="fa fa-plus"></span></button>
-                    <button class="btn btn-block btn-secondary" onclick="httpGet('/basic-actions/volume-down')"><span
-                            class="fa fa-minus"></span></button>
+            <div class="rocker">
+                <div class="rocker-btn rocker-down" onclick="httpGet('/basic-actions/volume-down')">
+                    <span class="fa fa-volume-down fa-lg"></span>
                 </div>
-            </div>
-            <div class="col-6 btn-group">
-                <button class="btn btn-block btn-secondary" onclick="httpGet('/basic-actions/home')"><span
-                        class="fa fa-home"></span></button>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-4 btn-group">
-                <button class="btn btn-block btn-secondary" onclick="httpGet('/basic-actions/left')"><span
-                        class="fa fa-chevron-left"></span></button>
-            </div>
-            <div class="col-4">
-                <div class="btn-group-vertical btn-block btn-group-lg">
-                    <button class="btn btn-block btn-secondary" onclick="httpGet('/basic-actions/up')"><span
-                            class="fa fa-chevron-up"></span></button>
-                    <button class="btn btn-block btn-secondary" onclick="httpGet('/basic-actions/dow ')"><span
-                            class="fa fa-chevron-down"></span></button>
+                <div class="rocker-btn rocker-up" onclick="httpGet('/basic-actions/volume-up')">
+                    <span class="fa fa-volume-up fa-lg"></span>
                 </div>
-            </div>
-            <div class="col-4 btn-group">
-                <button class="btn btn-block btn-secondary" onclick="httpGet('/basic-actions/right')"><span
-                        class="fa fa-chevron-right"></span></button>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-6">
-                <button class="btn btn-lg btn-block btn-danger" onclick="httpGet('/basic-actions/return')"><span
-                        class="fa fa-arrow-left"></span></button>
-            </div>
-            <div class="col-6">
-                <button class="btn btn-lg btn-block btn-success" onclick="httpGet('/basic-actions/confirm')"><span
-                        class="fa fa-check"></span></button>
             </div>
         </div>
         <div class="d-pad-wrapper">
@@ -85,7 +47,9 @@
                 <div class="d-pad-button-small bottom-right" onclick="httpGet('/basic-actions/confirm')">
                     <span class="fa fa-check fa-lg"></span>
                 </div>
-                <div class="d-pad-button-small bottom-left"></div>
+                <div class="d-pad-button-small bottom-left" onclick="httpGet('/basic-actions/return')">
+                    <span class="fa fa-undo fa-lg"></span>
+                </div>
             </div>
         </div>
 

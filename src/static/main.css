@@ -117,3 +117,74 @@ body {
     border-bottom-left-radius: 50%;
     border-top-right-radius: 25%;
 }
+
+.top-row {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.power-button {
+    background-color: #191919;
+    color: red;
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.power-button>span {
+    width: 100%;
+}
+
+.rocker {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.rocker::after {
+    background-color: #2D2D2D;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(50% 0%, 55% 0%, 50% 100%, 45% 100%);
+    clip-path: polygon(50% 0%, 55% 0%, 50% 100%, 45% 100%);
+}
+
+.rocker-btn {
+    width: 64px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+}
+
+.rocker-btn>span {
+    width: 100%;
+}
+
+.rocker-btn.rocker-up {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.rocker-btn.rocker-down {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

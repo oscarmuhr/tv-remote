@@ -1,28 +1,28 @@
 {
-  "name": "tv-remote",
-  "version": "1.0.0",
-  "description": "Node.js API for sony bravia TV",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oscarmuhr/tv-remote.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oscarmuhr/tv-remote/issues"
-  },
-  "homepage": "https://github.com/oscarmuhr/tv-remote#readme",
-  "dependencies": {
-    "dotenv": "^8.0.0",
-    "express": "^4.16.4",
-    "path": "^0.12.7",
-    "request": "^2.88.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.0"
-  }
+    "name": "tv-remote",
+    "version": "1.0.0",
+    "description": "Node.js API for sony bravia TV",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oscarmuhr/tv-remote.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/oscarmuhr/tv-remote/issues"
+    },
+    "homepage": "https://github.com/oscarmuhr/tv-remote#readme",
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "express": "^4.16.4",
+        "path": "^0.12.7",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.0"
+    }
 }
